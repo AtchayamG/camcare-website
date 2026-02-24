@@ -1,0 +1,347 @@
+:root {
+  --primary: #046A38;
+  --primary-dark: #034d29;
+  --light-bg: #f8f9fa;
+  --text-dark: #1c1c1c;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: var(--text-dark);
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-alt {
+  background: var(--light-bg);
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background:
+    linear-gradient(rgba(4, 106, 56, 0.75), rgba(4, 106, 56, 0.75)),
+    url('../images/hero-tech.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 140px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero .btn {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+}
+
+.hero .btn:hover {
+  background: #e6f4ec;
+}
+
+/* ================= ABOUT ================= */
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.about-text {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.about-img {
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-learn {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-learn:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+/* ================= VISION MISSION ================= */
+
+.section-alt .card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: .3s;
+}
+
+.section-alt .card:hover {
+  transform: translateY(-5px);
+}
+
+.section-alt h5 {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ================= QUOTE SECTION ================= */
+
+.quote-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero-tech.jpg') center/cover no-repeat;
+  padding: 120px 0;
+}
+
+.quote-box {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.quote-box h3 {
+  font-weight: 700;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.btn-primary-custom {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary-custom:hover {
+  background: var(--primary-dark);
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials-section {
+  background: var(--light-bg);
+}
+
+.testimonials-wrapper {
+  background: #fff;
+  padding: 70px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-subtitle {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.testimonial-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: .3s;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #f4b400;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.client-name {
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar {
+  background: linear-gradient(90deg,
+      #ffffff 0%,
+      #e6f4ec 40%,
+      var(--primary) 100%);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 80px 0 40px;
+}
+
+.footer-logo {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.social-icons a {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #fff;
+  transition: .3s;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+  z-index: 999;
+  transition: .3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .quote-box {
+    padding: 30px;
+  }
+}
+
+/* PAGE BANNER */
+.page-banner {
+  background:
+    linear-gradient(rgba(4, 106, 56, 0.85), rgba(4, 106, 56, 0.85)),
+    url('../images/hero-tech.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.page-banner h1 {
+  font-weight: 700;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-img {
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.btn-green {
+  background: #046A38;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn-green:hover {
+  background: #034d29;
+  color: #fff;
+}
