@@ -14,26 +14,7 @@
 <body>
 
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">CamCare</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div style="margin-top:90px;"></div>
-
+    <div id="header"></div>
     <!-- HERO BANNER -->
     <section class="page-banner">
         <div class="container text-center">
@@ -91,18 +72,8 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container text-center">
-            <h5>CamCare</h5>
-            <p>Premium Enterprise CCTV & Smart Surveillance Solutions</p>
-            <hr>
-            <p>© <span id="year"></span> CamCare. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/919094713923" class="whatsapp-float" target="_blank">
-        <i class="bi bi-whatsapp"></i>
-    </a>
+    <div id="footer"></div>
+    <script src="assets/js/layout.js"></script>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

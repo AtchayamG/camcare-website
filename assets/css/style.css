@@ -33,7 +33,11 @@ body {
     linear-gradient(rgba(4, 106, 56, 0.75), rgba(4, 106, 56, 0.75)),
     url('../images/hero-tech.jpg') center/cover no-repeat;
   color: #fff;
-  padding: 140px 0;
+
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -53,6 +57,73 @@ body {
   background: #e6f4ec;
 }
 
+/* ================= PAGE BANNER ================= */
+
+.page-banner {
+  background:
+    linear-gradient(rgba(4, 106, 56, 0.85), rgba(4, 106, 56, 0.85)),
+    url('../images/hero-tech.jpg') center/cover no-repeat;
+
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.page-banner h1 {
+  font-weight: 700;
+  margin-top: 75px;
+}
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar {
+  background: linear-gradient(90deg,
+      #ffffff 0%,
+      #e6f4ec 40%,
+      var(--primary) 100%);
+  padding: 15px 0;
+}
+
+/* Brand */
+.navbar-brand {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* 🔥 UPDATED MENU TEXT COLOR */
+.nav-link {
+  color: #1c1c1c !important;
+  /* Dark color */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: var(--primary-dark) !important;
+}
+
+/* Active */
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Mobile navbar background fix */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    color: #1c1c1c !important;
+  }
+}
+
 /* ================= ABOUT ================= */
 
 .about-title {
@@ -69,9 +140,11 @@ body {
 }
 
 .about-img {
-  border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
+
+/* ================= BUTTONS ================= */
 
 .btn-learn {
   background: var(--primary);
@@ -87,7 +160,21 @@ body {
   color: #fff;
 }
 
-/* ================= VISION MISSION ================= */
+.btn-primary-custom {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary-custom:hover {
+  background: var(--primary-dark);
+}
+
+/* ================= VISION ================= */
 
 .section-alt .card {
   border: none;
@@ -106,7 +193,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* ================= QUOTE SECTION ================= */
+/* ================= QUOTE ================= */
 
 .quote-section {
   background:
@@ -120,29 +207,6 @@ body {
   padding: 50px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-}
-
-.quote-box h3 {
-  font-weight: 700;
-}
-
-.form-control {
-  border-radius: 10px;
-  padding: 12px;
-}
-
-.btn-primary-custom {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 12px 35px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: .3s;
-}
-
-.btn-primary-custom:hover {
-  background: var(--primary-dark);
 }
 
 /* ================= TESTIMONIALS ================= */
@@ -185,7 +249,6 @@ body {
 .stars {
   color: #f4b400;
   margin-bottom: 15px;
-  font-size: 18px;
 }
 
 .client-name {
@@ -194,24 +257,62 @@ body {
   color: var(--primary);
 }
 
-/* ================= NAVBAR ================= */
+/* ================= PRODUCTS ================= */
 
-.custom-navbar {
-  background: linear-gradient(90deg,
-      #ffffff 0%,
-      #e6f4ec 40%,
-      var(--primary) 100%);
-  padding: 15px 0;
+.product-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: .3s;
 }
 
-.navbar-brand {
-  color: var(--primary);
-  font-weight: 700;
+.product-card:hover {
+  transform: translateY(-8px);
 }
 
-.nav-link {
-  color: #fff !important;
-  font-weight: 500;
+.product-img {
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievements-section {
+  position: relative;
+  background: url('../images/about-achievements-bg.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  color: white;
+}
+
+.achievements-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ================= CONTACT ================= */
+
+.contact-strip {
+  background: #0c2f1c;
+  padding: 60px 0;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.1rem rgba(25, 135, 84, .25);
+}
+
+.map-section iframe {
+  width: 100%;
 }
 
 /* ================= FOOTER ================= */
@@ -222,51 +323,16 @@ body {
   padding: 80px 0 40px;
 }
 
-.footer-logo {
-  font-size: 40px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
 .footer h5 {
   color: #fff;
-  margin-bottom: 20px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: #bbb;
-  text-decoration: none;
-  transition: .3s;
 }
 
 .footer-links a:hover {
   color: var(--primary);
 }
 
-.social-icons a {
-  font-size: 22px;
-  margin: 0 10px;
-  color: #fff;
-  transition: .3s;
-}
-
 .social-icons a:hover {
   color: var(--primary);
-}
-
-.copyright {
-  color: #aaa;
-  font-size: 14px;
 }
 
 /* ================= WHATSAPP ================= */
@@ -295,53 +361,4 @@ body {
   .section {
     padding: 60px 0;
   }
-
-  .quote-box {
-    padding: 30px;
-  }
-}
-
-/* PAGE BANNER */
-.page-banner {
-  background:
-    linear-gradient(rgba(4, 106, 56, 0.85), rgba(4, 106, 56, 0.85)),
-    url('../images/hero-tech.jpg') center/cover no-repeat;
-  padding: 100px 0;
-  color: #fff;
-}
-
-.page-banner h1 {
-  font-weight: 700;
-}
-
-/* PRODUCT CARDS */
-.product-card {
-  background: #ffffff;
-  padding: 40px 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: .3s;
-}
-
-.product-card:hover {
-  transform: translateY(-8px);
-}
-
-.product-img {
-  max-height: 220px;
-  object-fit: contain;
-  margin-bottom: 20px;
-}
-
-.btn-green {
-  background: #046A38;
-  color: #fff;
-  padding: 8px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-.btn-green:hover {
-  background: #034d29;
-  color: #fff;
 }
